@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item1"
+        android:title= " no reminder "
+        android:icon="@drawable/do_not"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/item2"
+        android:title="reminder once a day"
+        android:icon="@drawable/cup"
+        app:showAsAction="never"/>
+    <item android:id="@+id/item3"
+        android:title="reminder (hrs)"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/subitem1"
+                android:title="every 2 hours"
+                app:showAsAction="never"/>
+            <item android:id="@+id/subitem2"
+                android:title="every 1 hour"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+
+
+</menu>
